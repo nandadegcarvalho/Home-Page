@@ -11,6 +11,7 @@ export default function HomePage() {
         </h2>      
        <h3><a href="/Historico"> Ir para Histórico</a></h3>
        <h4><a href="/Lista"> Ir para Lista</a></h4>
+       <h5><a href="/Tabela"> Ir para Tabela Estática</a></h5>
     </div> 
     )
 }
