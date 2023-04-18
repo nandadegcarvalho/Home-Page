@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 export default function ListaPage() {
-    const [filmes, setFilmes] = useState ([{nome:"Homem de Ferro 1",dataDeLancamento:"2008"}, {nome:"Homem Aranha- Longe de Casa",dataDeLancamento:"2019"}, {nome: "Capitã Marvel", dataDeLancamento: "2019"}]);
+    const [filmes, setFilmes] = useState([{nome:"Homem de Ferro",dataDeLancamento:"2016"}])
     const [nome, setName] = useState ("")
     const [data, setDate] = useState  ("")
     const [filmeNovo,setFilmeNovo] = useState ({nome:"", dataDeLancamento:""})
     const updateName = (event) => {
-        setName(event.target.value);
+    setName (event.target.value)
     };
     const updateDate = (event) => {
         setDate(event.target.value);
