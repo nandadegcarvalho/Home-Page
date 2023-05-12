@@ -1,5 +1,5 @@
 
-import React, { useMemo, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 const theadStyle = {fontSize: "2em", fontColor:"Red",fontWeigth:"bold", backgroundColor: "#EEE" }
 const tdStyle = {borderStyle:"solid", borderColor:"black"} 
   
@@ -59,7 +59,13 @@ export default function TabelaPage() {
    const filmesFiltrados = useMemo(()=>
         filmes.filter(filter => filter.nome.includes(filtro))
    ,[filmes,filtro])
-               
+             
+   useEffect(() => {
+     if (editando) {
+        alert ("Você está editando " + nome + " do ano " + data)
+     }
+    },[editando]
+   )
     return (
     <><div>
             <h1>Tabela dos Filmes da Marvel</h1>
